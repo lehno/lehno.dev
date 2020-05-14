@@ -65,7 +65,7 @@
         <div class="self-center space-y-6">
           <div
             class="self-center cursor-pointer m-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-            @click="ga('send', 'event', 'tab', 'click', 'user'); tab = 'user';">
+            @click="tab = 'user'; ga('send', 'event', 'tab', 'click', 'user');">
             <svg class="w-6 h-6 fill-current select-none"
               :class="{ 'text-white': tab === 'user', 'text-green-700': tab !== 'user' }"
               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -76,7 +76,7 @@
           </div>
           <div
             class="self-center cursor-pointer m-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-            @click="ga('send', 'event', 'tab', 'click', 'timeline'); tab = 'timeline';">
+            @click="tab = 'timeline'; ga('send', 'event', 'tab', 'click', 'timeline');">
             <svg class="w-6 h-6 fill-current"
               :class="{ 'text-white': tab === 'timeline', 'text-green-700': tab !== 'timeline'}"
               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -87,7 +87,7 @@
           </div>
         </div>
         <a href="https://docs.google.com/document/d/1DGCuEVVzlUvDdbbOSy7SKtuwSbjl_6kBOsq5_GKXAuM/edit" target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer" 
           class="self-center cursor-pointer m-2 transition duration-300 ease-in-out transform text-green-700 hover:text-white hover:-translate-y-1 hover:scale-110">
           <svg class="w-6 f-6 fill-current" role="img" aria-labelledby="uniqueTitleID uniqueDescID"
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -170,8 +170,7 @@
                 If I have the freedom of choosing which technology, framework, or whatever it needs, I can guarantee
                 quality and delivery at a faster timing.
                 <br>
-                Let's have a chat and/or take a look at my projects. The tip of the day is, be careful with
-                junior programmers when you need something good and fast.
+                Let's have a chat and/or take a look at my projects.
                 <br>
                 <br>
                 This is my comical approach to reality.
