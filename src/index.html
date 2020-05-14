@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="/">
+  <meta charset="utf-8" />
+  <title>Leandro Hoffmann</title>
+  <meta name="description" content="Leandro Hoffmann - CV written with the best techs for highscore lighthouse audit" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="msapplication-TileColor" content="#1a202c">
+  <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+  <meta name="theme-color" content="#1a202c">
+  <link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+  <noscript>
+    <h3 style="color: #1a202c; margin: 2rem;">
+      Sorry, but app is not available without javascript
+    </h3>
+  </noscript>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165361492-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-165361492-1');
+  </script>
+</head>
+
+<body>
+  <div class="w-full h-screen bg-gray-dark sm:p-0 md:p-4 lg:p-8 xl:p-16">
+    <div class="self-center flex flex-row w-full h-full" x-data="{ tab: 'user' }">
+      <div class="flex flex-col justify-between md:my-10 w-16 py-5 bg-gradient">
+        <div class="self-center">
+          <svg class="w-10 h-10 logo-gradient" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.09 80.09">
+            <g style="isolation:isolate">
+              <rect x="25.29" y="3.12" width="29.51" height="14.01" style="mix-blend-mode:hue" />
+              <polygon points="17.13 62.83 55.6 62.83 55.6 76.79 3.51 76.79 3.51 3.12 17.13 3.12 17.13 62.83"
+                style="mix-blend-mode:hue" />
+              <polygon
+                points="77.45 3.12 77.45 76.79 63.83 76.79 63.83 46.34 26.11 46.94 26.04 32.14 63.78 32.33 63.83 3.12 77.45 3.12"
+                style="mix-blend-mode:hue" />
+              <defs>
+                <linearGradient id="logo-gradient">
+                  <stop offset="5%" stop-color="#1a202c" />
+                  <stop offset="90%" stop-color="#2d3748" />
+                </linearGradient>
+              </defs>
+            </g>
+          </svg>
+        </div>
+        <div class="self-center space-y-6">
+          <div
+            class="self-center cursor-pointer m-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+            @click="ga('send', 'event', 'tab', 'click', 'user'); tab = 'user';">
+            <svg class="w-6 h-6 fill-current select-none"
+              :class="{ 'text-white': tab === 'user', 'text-green-700': tab !== 'user' }"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm95.8 32.6L272 480l-32-136 32-56h-96l32 56-32 136-47.8-191.4C56.9 292 0 350.3 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-72.1-56.9-130.4-128.2-133.8z">
+              </path>
+            </svg>
+          </div>
+          <div
+            class="self-center cursor-pointer m-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+            @click="ga('send', 'event', 'tab', 'click', 'timeline'); tab = 'timeline';">
+            <svg class="w-6 h-6 fill-current"
+              :class="{ 'text-white': tab === 'timeline', 'text-green-700': tab !== 'timeline'}"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path fill="currentColor"
+                d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <a href="https://docs.google.com/document/d/1DGCuEVVzlUvDdbbOSy7SKtuwSbjl_6kBOsq5_GKXAuM/edit" target="_blank"
+          rel="noopener noreferrer"
+          class="self-center cursor-pointer m-2 transition duration-300 ease-in-out transform text-green-700 hover:text-white hover:-translate-y-1 hover:scale-110">
+          <svg class="w-6 f-6 fill-current" role="img" aria-labelledby="uniqueTitleID uniqueDescID"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <title id="uniqueTitleID">Download pdf</title>
+            <desc id="uniqueDescID">Download Leandro Hoffmann curriculumn as pdf</desc>
+            <path fill="currentColor"
+              d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z">
+            </path>
+          </svg>
+        </a>
+      </div>
+      <div class="w-4/12 bg-cover bg-center flex flex-col justify-end shadow-lg hidden md:flex lg:flex xl:flex"
+        style="background-image: url('https://instagram.fdub5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p750x750/12142569_749559988502740_2122251811_n.jpg?_nc_ht=instagram.fdub5-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=ubrRh98fY-oAX9_iEA6&oh=b8d291b7c79022ccfcae5540a5794e19&oe=5ED3E437');">
+        <div class="self-center mb-2 sm:mb-2 md:mb-4 lg:mb-10 xl:mb-15">
+          <div class="sm:text-lg md:text-xl lg:text-2xl xl:text-3xl select-none tracking-wide font-serif">LEANDRO
+            HOFFMANN
+          </div>
+          <div class="sm:text-base md:text-lg lg:text-xl xl:text-2xl select-none text-center text-green-500 font-serif">
+            SOFTWARE ENGINEER</div>
+          <div class="flex flex-row mt-2 space-x-2 justify-center">
+            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/leandrohoffmann/?locale=en_US"
+              target="_blank">
+              <img class="w-6 h-6" src="./assets/svg/linkedin-brands.svg" alt="LinkedIn">
+            </a>
+            <a rel="noopener noreferrer" href="https://github.com/lehno" target="_blank">
+              <img class="w-6 h-6" src="./assets/svg/github-square-brands.svg" alt="Github">
+            </a>
+            <a rel="noopener noreferrer" href="https://medium.com/@lehno" target="_blank">
+              <img class="w-6 h-6" src="./assets/svg/medium-brands.svg" alt="Medium">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-8/12 lg:w-8/12 xl:w-8/12 md:my-10 bg-gray-800">
+        <div
+          class="p-6 lg:p-10 max-h-full overflow-y-auto scrollbar-w-2 scrollbar-track-gray-lighter scrollbar-thumb-rounded scrollbar-thumb-gray scrolling-touch">
+          <template x-if="tab === 'user'">
+            <div class="text-white">
+              <div class="flex md:hidden lg:hidden xl:hidden mb-4">
+                <div class="h-24 w-24 rounded-full bg-cover mr-4"
+                  style="background-image: url('https://instagram.fdub5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p750x750/12142569_749559988502740_2122251811_n.jpg?_nc_ht=instagram.fdub5-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=ubrRh98fY-oAX9_iEA6&oh=b8d291b7c79022ccfcae5540a5794e19&oe=5ED3E437')">
+                </div>
+                <div class="text-left">
+                  <h2 class="text-lg">Leandro Hoffmann</h2>
+                  <div class="text-gray-600">Software Engineer (AWS Certified)</div>
+                  <div class="text-gray-600">English / Portuguese / Spanish</div>
+                  <div class="flex flex-row mt-2 space-x-2">
+                    <a rel="noopener noreferrer" href="https://www.linkedin.com/in/leandrohoffmann/?locale=en_US"
+                      target="_blank">
+                      <img class="w-6 h-6" src="./assets/svg/linkedin-brands.svg" alt="LinkedIn">
+                    </a>
+                    <a rel="noopener noreferrer" href="https://github.com/lehno" target="_blank">
+                      <img class="w-6 h-6" src="./assets/svg/github-square-brands.svg" alt="Github">
+                    </a>
+                    <a rel="noopener noreferrer" href="https://medium.com/@lehno" target="_blank">
+                      <img class="w-6 h-6" src="./assets/svg/medium-brands.svg" alt="Medium">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="text-4xl font-serif">ABOUT ME</div>
+              <div class="text-lg text-green-400 mt-5"><span x-text="getAge()"></span> years old / Based in Ireland
+              </div>
+              <div class="text-lg text-green-400 mt-1">Senior Software Engineer (AWS Certified)</div>
+              <div class="text-lg text-green-400 mt-1">English / Portuguese / Spanish speaker</div>
+              <div class="text-lg font-medium my-8">“In one sentence, I am an application builder, including
+                frontend, backend, architecture, infrastructure, database...”
+              </div>
+              <div class="text-justify font-light">
+                When assessing the value of your software development team, it is easy to focus on cost rather
+                than value. Developer salaries are some of the highest around and they are very wide ranging. If you
+                look hardenough you will find cheap labour. But cheap will often mean 9 to 5 employees who take a long
+                time to deliver simple tasks or take shortcuts at the expense of the product. One of the most important
+                things to understand is the value of a good developer, as opposed to the cost.
+                <br>
+                <br>
+                Since 2008, I've built a wide range of complete applications using the latest available
+                technologies like
+                micro-services, serverless functions, monolith and more.
+                If I have the freedom of choosing which technology, framework, or whatever it needs, I can guarantee
+                quality and delivery at a faster timing.
+                <br>
+                Let's have a chat and/or take a look at my projects. The tip of the day is, be careful with
+                junior programmers when you need something good and fast.
+                <br>
+                <br>
+                This is my comical approach to reality.
+                <br>
+                <br>
+                In my free time, I'm a pianist and also taking the road of video editing from my travels around the
+                world.
+              </div>
+              <div class="mt-6">
+                <a href="mailto:leh.hoff@gmail.com" class="bg-gray-700 py-2 px-4 rounded hover:text-green-500">Send me
+                  an
+                  email</a>
+              </div>
+              <div class="text-md text-gray-400 mt-6">Do you want to learn how this CV was built? Read this <a
+                  class="underline" href="" target="_blank">Medium article</a></div>
+            </div>
+          </template>
+          <template x-if="tab === 'timeline'">
+            <div class="text-white">
+              <div class="text-4xl font-serif">Skills</div>
+              <div class="text-sm font-light">This is a list of skills that I got over my career, its ordered by how
+                long I've been using it plus the knowledge acquired.<br> Click on the skill for more details.</div>
+              <div class="my-6 select-none" x-data="getSkills()">
+                <div class="flex">
+                  <div class="md:w-2/12"></div>
+                  <div class="w-full flex flex-row text-xs font-serif justify-between md:ml-2">
+                    <div>Noob</div>
+                    <div>Expert</div>
+                  </div>
+                </div>
+                <template x-for="item in items" :key="item">
+                  <div>
+                    <div
+                      class="md:flex md:flex-row items-center mb-6 cursor-pointer relative transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+                      @click="item.show = !item.show" @click.away="item.show = false">
+                      <div class="w-full md:w-2/12 text-sm text-center md:text-right mr-2" x-text="item.name"></div>
+                      <div class="w-full bg-gray-600 h-2 relative">
+                        <div class="text-xs h-2 block shadow-md" x-bind:style="item.width">
+                          <div class="block h-2 progress-skill"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div x-show="item.show" class="my-4" x-transition:enter="transition-all ease-in-out duration-500"
+                      x-transition:enter-start="opacity-0 h-0" x-transition:enter-end="opacity-100 h-full"
+                      x-transition:leave="transition-all ease-in-out duration-500"
+                      x-transition:leave-start="opacity-100 h-full" x-transition:leave-end="opacity-0 h-0">
+                      <div class="flex">
+                        <div class="md:w-2/12"></div>
+                        <div class="w-full md:ml-2">
+                          <div class="text-sm font-light" x-text="item.details.label"></div>
+                          <div class="w-full flex flex-wrap">
+                            <template x-for="tool in item.details.tools" :key="tool">
+                              <div x-text="tool" class="bg-gray-900 text-sm font-semibold rounded py-1 px-2 mt-2 mr-2">
+                              </div>
+                            </template>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </template>
+              </div>
+              <div class="text-4xl my-8 font-serif">Experience</div>
+              <div class="relative">
+                <div class="border-r-2 border-green-500 absolute h-full top-0" style="left: 0.30rem;"></div>
+                <ul class="list-none m-0 p-0" x-data="getCompanies()">
+                  <template x-for="item in companies" :key="item">
+                    <li class="mb-12">
+                      <div class="bg-green-500 rounded-full h-3 w-3 absolute mt-8"></div>
+                      <div class="sm:flex px-6">
+                        <img class="h-16 w-16 md:h-20 md:w-20 rounded-full mx-auto sm:mx-4 md:mr-6" :src="item.image">
+                        <div class="text-center sm:text-left mt-4 sm:mt-0">
+                          <h2 class="text-lg text-green-500 font-serif" x-text="item.title"></h2>
+                          <div class="text-gray-600" x-text="item.role"></div>
+                          <div class="text-gray-600" x-text="item.region"></div>
+                          <nav class="flex flex-row mt-4 text-center justify-center sm:justify-start">
+                            <button @click="item.tab = 'overview'"
+                              :class="{ 'text-green-500 border-green-500': item.tab === 'overview'}"
+                              class="text-sm font-serif text-gray-600 border-b-2 border-transparent hover:text-green-500 mr-2 focus:outline-none">
+                              OVERVIEW
+                            </button>
+                            <button @click="item.tab = 'projects'"
+                              :class="{ 'text-green-500 border-green-500': item.tab === 'projects'}"
+                              class="text-sm font-serif text-gray-600 border-b-2 border-transparent hover:text-green-500 focus:outline-none">
+                              PROJECTS
+                            </button>
+                          </nav>
+                          <div class="mt-4">
+                            <div x-show="item.tab === 'overview'" class="text-sm mt-4 font-light"
+                              x-text="item.description"></div>
+                            <div x-show="item.tab === 'projects'">
+                              <template x-for="project in item.projects">
+                                <div>
+                                  <div class="text-md font-serif text-green-500 mt-4" x-text="project.title"></div>
+                                  <div class="text-sm font-light" x-text="project.description"></div>
+                                </div>
+                              </template>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </template>
+              </div>
+              <div class="text-4xl my-10 font-serif">Education</div>
+              <div>
+                <div class="sm:flex  px-6">
+                  <img class="h-16 w-16 md:h-20 md:w-20 rounded-full mx-auto sm:mx-4 md:mr-6"
+                    src="https://media-exp1.licdn.com/dms/image/C4D0BAQFZpVEfvW6DVQ/company-logo_100_100/0?e=1596067200&v=beta&t=on90kDnk218OOV_S52Sk7uvjAdj1nlPTuKkKUzh5Usk">
+                  <div class="text-center sm:text-left mt-4 sm:mt-0">
+                    <h2 class="text-lg text-green-500">2009 / 2013 - UNISOCIESC Universidade Sociedade Educacional de
+                      Santa Catarina
+                    </h2>
+                    <div class="text-gray-600">Bachelor's degree, Information Systems</div>
+                    <div class="text-gray-600">Joinville, Brazil</div>
+                    <div class="text-gray-600">CR: 8.9</div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-4xl my-10 font-serif">Certifications</div>
+              <div class="mb-8">
+                <div class="sm:flex  px-6">
+                  <img class="h-16 w-16 md:h-20 md:w-20 rounded-full mx-auto sm:mx-4 md:mr-6"
+                    src="https://media-exp1.licdn.com/dms/image/C4D0BAQGzuSBRRRuphw/company-logo_100_100/0?e=1596067200&v=beta&t=6gwlclzq5oVeX8Jo_rFrD0XGNG3_x5UYUXy6OJMm6_g">
+                  <div class="text-center sm:text-left mt-4 sm:mt-0">
+                    <h2 class="text-lg text-green-500">Amazon Web Services Developer - Associate
+                    </h2>
+                    <div class="text-gray-600">Nov 2019 / Nov 2021</div>
+                    <div class="text-gray-600 mb-6">Credential ID 4625LWT2EM4E11WT</div>
+                    <a href="https://aw.certmetrics.com/amazon/public/verification.aspx" alt="" target="_blank"
+                      class="rounded-lg px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 bg-green-500 hover:bg-green-600 md:text-lg xl:text-base text-white font-semibold leading-tight shadow-md">View</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

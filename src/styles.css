@@ -1,0 +1,90 @@
+/* purgecss start ignore */
+@tailwind base;
+
+@font-face {
+  font-family: Viga;
+  font-weight: 400;
+  src: url(/assets/fonts/Viga-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 200;
+  src: url(/assets/fonts/Inter-ExtraLight.ttf) format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 400;
+  src: url(/assets/fonts/Inter-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 500;
+  src: url(/assets/fonts/Inter-Medium.ttf) format("truetype");
+  font-display: swap;
+}
+
+@-webkit-keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@-moz-keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #1a202c; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #22543d; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #22543d; 
+}
+
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color:transparent
+}
+
+.bg-gray-dark {
+  background-color: #191919;
+}
+
+.logo-gradient {
+  fill: url(#logo-gradient) #fff;
+}
+
+@responsive {
+  .bg-gradient {
+    background: transparent linear-gradient(180deg, #549778 0%, #22543D 41%, #2D3748 64%, #1A202C 84%, #1A202C 100%) 0% 0% no-repeat padding-box;
+  }
+}
+
+.progress-skill {
+  background-color: #48bb78;
+  -webkit-animation: progressBar 2s ease-in-out;
+  -webkit-animation-fill-mode:both; 
+  -moz-animation: progressBar 2s ease-in-out;
+  -moz-animation-fill-mode:both; 
+}
