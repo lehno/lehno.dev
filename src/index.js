@@ -180,6 +180,7 @@ window.getSkills = function () {
                 tools: ['Wowza', 'WebRTC', 'STUN', 'TURN', 'FFMPEG']
             }
         }, {
+            show: true,
             name: 'Javascript',
             width: 'width: 95%;',
             score: 95,
