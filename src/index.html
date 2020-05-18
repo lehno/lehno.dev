@@ -73,7 +73,7 @@
                 d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm95.8 32.6L272 480l-32-136 32-56h-96l32 56-32 136-47.8-191.4C56.9 292 0 350.3 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-72.1-56.9-130.4-128.2-133.8z">
               </path>
             </svg>
-            <div class="text-xs uppercase font-serif text-center" :class="{ 'text-white': tab === 'user', 'text-green-700': tab !== 'user' }">About</div>
+            <div class="text-xs uppercase font-serif select-none" :class="{ 'text-white': tab === 'user', 'text-green-700': tab !== 'user' }">About</div>
           </div>
           <div
             class="flex flex-col items-center cursor-pointer m-2 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
@@ -85,7 +85,7 @@
                 d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z">
               </path>
             </svg>
-            <div class="text-xs uppercase font-serif" :class="{ 'text-white': tab === 'timeline', 'text-green-700': tab !== 'timeline' }">Skills</div>
+            <div class="text-xs uppercase font-serif select-none" :class="{ 'text-white': tab === 'timeline', 'text-green-700': tab !== 'timeline' }">Skills</div>
           </div>
         </div>
         <a href="https://docs.google.com/document/d/1DGCuEVVzlUvDdbbOSy7SKtuwSbjl_6kBOsq5_GKXAuM/edit" target="_blank"
@@ -170,7 +170,7 @@
                 technologies like
                 micro-services, serverless functions, monolith and more.
                 If I have the freedom of choosing which technology, framework, or whatever it needs, I can guarantee
-                quality and delivery at a faster timing.
+                quality and quick delivery.
                 <br>
                 Let's have a chat and/or take a look at my projects.
                 <br>
@@ -178,7 +178,7 @@
                 This is my comical approach to reality.
                 <br>
                 <br>
-                In my free time, I'm a pianist and also taking the road of video editing from my travels around the
+                In my free time, I'm a pianist and also taking the road of video editing of my travels around the
                 world.
               </div>
               <div class="mt-6">
@@ -209,13 +209,15 @@
                       class="md:flex md:flex-row items-center mb-6 cursor-pointer relative"
                       @click="item.show = !item.show" @click.away="item.show = false">
                       <div class="w-full md:w-2/12 text-sm text-center md:text-right mr-2" x-text="item.name"></div>
-                      <div class="w-full bg-gray-600 h-2 relative">
-                        <div class="text-xs h-2 block shadow-md" x-bind:style="item.width">
-                          <div class="block h-2 progress-skill"></div>
+                      <div class="flex flex-row w-full items-center">
+                        <div class="flex w-full bg-gray-600 h-2 relative">
+                          <div class="text-xs h-2 block shadow-md" x-bind:style="item.width">
+                            <div class="block h-2 progress-skill"></div>
+                          </div>
                         </div>
+                        <div class="flex ml-2" x-show="item.show">-</div>
+                        <div class="flex ml-2" x-show="!item.show">+</div>
                       </div>
-                      <div class="ml-2" x-show="item.show">-</div>
-                      <div class="ml-2" x-show="!item.show">+</div>
                     </div>
                     <div x-show="item.show" class="my-4" x-transition:enter="transition-all ease-in-out duration-500"
                       x-transition:enter-start="opacity-0 h-0" x-transition:enter-end="opacity-100 h-full"
