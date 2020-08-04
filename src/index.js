@@ -16,7 +16,7 @@ window.getCompanies = function () {
                 title: 'Apr 2016 / Present - T-Pro',
                 role: 'Senior Software Engineer',
                 region: 'Dublin, Ireland',
-                image: 'https://media-exp1.licdn.com/dms/image/C4D0BAQFcvN_a1WNbmw/company-logo_100_100/0?e=1596067200&v=beta&t=r0LDIo-DQZxme0JhXECx8VPrGDNN-JSG7JttciOWS0k',
+                image: 'assets/images/tpro.png',
                 description: 'T-Pro is a global leader in clinical documentation improvement software. Our cloud-based or on-premise clinical documentation solutions enable workflows for efficient and accurate speech recognition, medical transcription, messaging and coding. We facilitate a patient centred solution by making it easy for clinicians to capture the patient narrative and deliver information when it is needed most – at the point of care.',
                 projects: [
                     {
@@ -46,7 +46,7 @@ window.getCompanies = function () {
                 title: 'Mar 2016 / Mar 2017 - Media Vox Pop',
                 role: 'Senior Software Engineer',
                 region: 'Remote, Italy',
-                image: 'https://media-exp1.licdn.com/dms/image/C510BAQGaYNPyVLNMCQ/company-logo_100_100/0?e=1596067200&v=beta&t=0P7PuGNTJC-Y7oUQr7EtCCN-H00IT12L8XwkkGA9on0',
+                image: 'assets/images/voxpop.png',
                 description: 'Vox Pop is a digital communications tool created for media organizations that aims to build a deeper connection to their followers by using various crowdsourcing techniques. Our technology allows journalists to collect newsworthy material and relevant stories from everyone, everywhere.',
                 projects: [
                     {
@@ -60,7 +60,7 @@ window.getCompanies = function () {
                 title: 'May 2014 / Feb 2016 - Camerite',
                 role: 'Senior Software Architect',
                 region: 'Joinville, Brazil',
-                image: 'https://media-exp1.licdn.com/dms/image/C560BAQEVpeuy44greg/company-logo_100_100/0?e=1596067200&v=beta&t=a69iqqjsxBCTT1rERakQZSu-grtLIIGgCUO-Nyw6UqU',
+                image: 'assets/images/camerite.png',
                 description: 'Camerite believes that technology will revolutionize adding intelligence to cameras, making it able to transform cities into a safer and smarter place to live.',
                 projects: [
                     {
@@ -74,7 +74,7 @@ window.getCompanies = function () {
                 title: 'Apr 2013 / May 2014 - CIPHER',
                 role: 'Security System Analyst',
                 region: 'Joinville, Brazil',
-                image: 'https://media-exp1.licdn.com/dms/image/C4E0BAQF79fnBUPB0mw/company-logo_100_100/0?e=1596067200&v=beta&t=QizYagwV1gdpYEYv8qYYWef634iRZQiCCTcyWKovj5o',
+                image: 'assets/images/cipher.jpg',
                 description: 'Cipher is a global cybersecurity company that delivers a wide range of services: Managed Security Services (MSS), Managed Detection and Response (MDR), Cyber Intelligence Services (CIS), Red Team Services (RTS), Governance, Risk and Compliance (GRC) and Cybersecurity Technology Integration (CTI). These services are supported by the Cipher Lab, an elite threat and cyber intelligence research and development lab, and also by five 24x7 Security Operations Centers (SOC).',
                 projects: [
                     {
@@ -102,7 +102,7 @@ window.getCompanies = function () {
                 title: 'Oct 2011 / Aug 2012 - Unimed',
                 role: 'Systems Analyst',
                 region: 'Joinville, Brazil',
-                image: 'https://media-exp1.licdn.com/dms/image/C4D0BAQFF6GVbuvC0CA/company-logo_100_100/0?e=1596067200&v=beta&t=IT5VO9zkgoQVJiA-akHrkUCtBrOl308lLCUGlvcJ0OM',
+                image: 'assets/images/unimed.png',
                 description: 'Unimed is the biggest hospital chain in Brazil with 119 branches. Unimed Federação is responsible for all the technology running in their hospitals.',
                 projects: [
                     {
@@ -116,7 +116,7 @@ window.getCompanies = function () {
                 title: 'Nov 2010 / Sep 2011 - TOTVS',
                 role: 'Developer',
                 region: 'Joinville, Brazil',
-                image: 'https://media-exp1.licdn.com/dms/image/C510BAQEL4afszp1o1w/company-logo_100_100/0?e=1596067200&v=beta&t=xOtHOpNFqf76T5W48HuRNj-yRe_ugCZaMpZ9NBjwkgY',
+                image: 'assets/images/totvs.png',
                 description: 'Leader in the market for business management software and genuinely Brazilian, TOTVS is recognized for its innovation. Holder of more than 50% of marketshare in Brazil and also leader in Latin America, according to Gartner®, has as its inspiration source its 26 thousand customers.',
                 projects: [
                     {
