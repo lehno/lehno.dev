@@ -13,6 +13,29 @@ window.getCompanies = function () {
         companies: [
             {
                 tab: 'overview',
+                title: 'March 2020 / Present - Catallyst',
+                role: 'Co-Founder',
+                region: 'Dublin, Ireland',
+                image: 'assets/images/catallyst.png',
+                description: 'At Catallyst, our mission is to boost teams and businesses providing them services and guidance to grow fast and sustainable.',
+                projects: [
+                    {
+                        title: 'IT Services',
+                        description: 'From UI/UX, passing through the development phase until the deployment on a cloud provider.'
+                    }, {
+                        title: 'Project and Business Change',
+                        description: 'Classic and Agile methodologies implementation, project facilitation and tools assessment.'
+                    }, {
+                        title: 'Business Consulting',
+                        description: 'Cloud infrastructure establishment, internal teams set up and market tools integration.'
+                    }, {
+                        title: 'Business Consulting',
+                        description: 'High ranked professionals sourcing with soft and hard skills valuation.'
+                    }
+                ]
+            },
+            {
+                tab: 'overview',
                 title: 'Apr 2016 / Present - T-Pro',
                 role: 'Senior Software Engineer',
                 region: 'Dublin, Ireland',
