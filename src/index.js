@@ -209,7 +209,7 @@ window.getSkills = function () {
             score: 95,
             details: {
                 label: 'This is my primary language. I don\'t care if people say it is not typed or it is not good. Today its one of the most used language and you have typescript to fix many things. Its very fast for front and backend development and it solves problems.',
-                tools: ['NodeJS', 'AngularJS', 'Angular 2+', 'React', 'VueJS', 'Typescript', 'HTML', 'CSS', 'JSON', 'JQuery', 'REST Api', 'XML', 'ExpressJS', 'Fastify', 'Socket.io']
+                tools: ['NodeJS', 'NestJS','Svelte', 'Angular', 'AngularJS', 'React', 'VueJS', 'Typescript', 'HTML', 'CSS', 'JSON', 'JQuery', 'REST Api', 'XML', 'ExpressJS', 'Fastify', 'Socket.io']
             }
         }, {
             name: 'Flutter',
@@ -241,7 +241,7 @@ window.getSkills = function () {
             score: 93,
             details: {
                 label: 'Using sql for a long time, there is no state for a software if theres no storage.',
-                tools: ['NOSQL', 'PL/SQL', 'MYSQL', 'Progres 4GL', 'MongoDB', 'SQLite']
+                tools: ['Postgres', 'NOSQL', 'PL/SQL', 'MYSQL', 'Progres 4GL', 'MongoDB', 'SQLite']
             }
         }, {
             name: 'Others',
