@@ -191,7 +191,7 @@ window.getSkills = function () {
             width: 'width: 75%;',
             score: 75,
             details: {
-                label: 'Are you still looking for someone that knows SVN? Im sorry.',
+                label: 'Are you still looking for someone that knows SVN? I\'m sorry.',
                 tools: ['Git', 'Github actions', 'Drone.io', 'Jenkins', 'CodeDeploy', 'CodePipeline', 'Gitlab', 'Webpack', 'Bower', 'Gulp']
             }
         }, {

@@ -196,16 +196,9 @@
               <div class="text-sm font-light">This is a list of skills that I got over my career, its ordered by how
                 long I've been using it plus the knowledge acquired.<br> Click on the skill for more details.</div>
               <div class="my-6 select-none" x-data="getSkills()">
-                <div class="flex">
-                  <div class="md:w-2/12"></div>
-                  <div class="w-full flex flex-row text-xs font-serif justify-between md:ml-2">
-                    <div>Noob</div>
-                    <div>Expert</div>
-                  </div>
-                </div>
                 <template x-for="item in items" :key="item">
                   <div>
-                    <div
+                    <!-- <div
                       class="md:flex md:flex-row items-center mb-6 cursor-pointer relative"
                       @click="item.show = !item.show" @click.away="item.show = false">
                       <div class="w-full md:w-2/12 text-sm text-center md:text-right mr-2" x-text="item.name"></div>
@@ -218,14 +211,11 @@
                         <div class="flex ml-2" x-show="item.show">-</div>
                         <div class="flex ml-2" x-show="!item.show">+</div>
                       </div>
-                    </div>
-                    <div x-show="item.show" class="my-4" x-transition:enter="transition-all ease-in-out duration-500"
-                      x-transition:enter-start="opacity-0 h-0" x-transition:enter-end="opacity-100 h-full"
-                      x-transition:leave="transition-all ease-in-out duration-500"
-                      x-transition:leave-start="opacity-100 h-full" x-transition:leave-end="opacity-0 h-0">
+                    </div> -->
+                    <div class="my-10">
+                      <div class="text-lg font-serif" x-text="item.name"></div>
                       <div class="flex">
-                        <div class="md:w-2/12"></div>
-                        <div class="w-full md:ml-2">
+                        <div class="w-full">
                           <div class="text-sm font-light" x-text="item.details.label"></div>
                           <div class="w-full flex flex-wrap">
                             <template x-for="tool in item.details.tools" :key="tool">
